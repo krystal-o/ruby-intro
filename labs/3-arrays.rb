@@ -12,23 +12,19 @@
 # If the two lists contain the same item, only show it once!
 # Lastly, display each item in the list prepended with "buy ".
 
-bens_list =["diapers","wipes","bath toys", "toilet paper"]
-brians_list = ["beer","toilet paper", "tacos"]
-# puts bens_list.inspect
-
-combined_list = bens_list + brians_list
-puts combined_list.inspect
-
+my_list = ["milk","eggs","bacon","apples"]
+friend_list = ["beer","cookies","apples"]
+shared_list = my_list + friend_list
+#puts shared_list.inspect
 #2. sort the lists alphabetically
-sorted_list = combined_list.sort
-puts sorted_list.inspect
+sorted_list = shared_list.sort
+#puts sorted_list
 
 #3 remove duplicates from the list
-unique_list = sorted_list.uniq 
-puts unique_list.inspect
+unique_list = sorted_list.uniq
+#puts unique_list.inspect
 
 #4 display each item prependendent with buy
-unique_list = sorted_list.uniq 
 puts "buy #{unique_list[0]}"
 puts "buy #{unique_list[1]}"
 puts "buy #{unique_list[2]}"
